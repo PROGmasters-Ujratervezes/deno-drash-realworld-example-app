@@ -37,8 +37,7 @@
     "webpack-cli": "^3.2.3"
   },
   "scripts": {
-    "webpack": "node_modules/.bin/webpack --hide-modules --env.environment=development",
-    "webpack-watch": "node_modules/.bin/webpack --hide-modules --watch --env.environment=development"
+    "webpack": "node_modules/.bin/webpack --hide-modules --env.environment=production"
   },
   "dependencies": {
     "@johmun/vue-tags-input": "^2.1.0",

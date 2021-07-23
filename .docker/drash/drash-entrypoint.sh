@@ -1,5 +1,5 @@
 #!/bin/bash
-deno run --allow-net --allow-read --watch --unstable app.ts &
 npm update chokidar
 npm i
-npm run webpack-watch
+npm run webpack
+deno run --allow-net --allow-read --unstable app.ts

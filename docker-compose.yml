@@ -16,7 +16,9 @@ services:
 
   drash:
     container_name: realworld_drash
-    image: tjozsa/conduit
+    build:
+      context: .
+      dockerfile: .docker/drash/Dockerfile
     volumes:
       - ./src:/var/www/src
     working_dir: /var/www/src
