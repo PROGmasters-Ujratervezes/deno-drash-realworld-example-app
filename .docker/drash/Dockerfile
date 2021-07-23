@@ -10,6 +10,6 @@ RUN curl -fsSL https://deno.land/x/install/install.sh | DENO_INSTALL=/usr/local 
 RUN export DENO_INSTALL="/usr/bin"
 RUN export PATH="$DENO_INSTALL/bin:$PATH"
 
-COPY ./drash-entrypoint.sh /drash-entrypoint.sh
+COPY ./.docker/drash/drash-entrypoint.sh /drash-entrypoint.sh
 RUN chmod +x /drash-entrypoint.sh
 ENTRYPOINT ["/drash-entrypoint.sh"]
