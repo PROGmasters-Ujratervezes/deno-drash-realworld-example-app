@@ -26,6 +26,7 @@ services:
       - "1667:1667"
     networks:
       - drash-app-network
+    restart: always
 
 networks:
   drash-app-network:
